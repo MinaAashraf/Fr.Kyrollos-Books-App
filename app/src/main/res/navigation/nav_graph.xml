@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+
+    <fragment
+        android:id="@+id/booksFragment"
+        android:name="com.ma.development.booksapp.presentation.booksfeed.BooksFragment"
+        android:label="BooksFragment">
+        <action
+            android:id="@+id/action_booksFragment_to_noConnectionFragment"
+            app:destination="@id/noConnectionFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.ma.development.booksapp.presentation.splach.SplashFragment"
+        android:label="fragment_splach"
+        tools:layout="@layout/fragment_splach">
+        <action
+            android:id="@+id/action_splashFragment_to_booksFragment"
+            app:destination="@id/booksFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/noConnectionFragment"
+        android:name="com.ma.development.booksapp.presentation.NoConnectionFragment"
+        android:label="NoConnectionFragment">
+        <action
+            android:id="@+id/action_noConnectionFragment_to_booksFragment"
+            app:destination="@id/booksFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

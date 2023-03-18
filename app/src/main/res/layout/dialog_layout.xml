@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="book"
+            type="com.ma.development.booksapp.domain.model.Book" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="@{`هل تريد تحميل كتاب '` + book.name +`' ؟` }"
+                android:drawableStart="@drawable/ic_baseline_cloud_download_24"
+                android:drawablePadding="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:textSize="@dimen/_13ssp"
+                android:drawableTint="@color/purple_500"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/download_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="@string/download_label"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ProgressBar
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/circle_background"
+                android:elevation="2dp"
+                android:padding="@dimen/_4sdp"
+                android:visibility="gone"
+                android:id="@+id/progrss_bar"
+                app:layout_constraintBottom_toBottomOf="@+id/download_btn"
+                app:layout_constraintEnd_toEndOf="@+id/download_btn"
+                app:layout_constraintStart_toStartOf="@+id/download_btn"
+                app:layout_constraintTop_toTopOf="@+id/download_btn" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

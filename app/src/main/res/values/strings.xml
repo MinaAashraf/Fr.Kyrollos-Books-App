@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">كتب القمص كيرلس روماني</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="search_hint">ابحث عن الكتاب الذي تريده..</string>
+    <string name="folder_name">كتب ابونا كيرلس</string>
+    <string name="pdf_name_key">pdf_name</string>
+    <string name="download_label">تحميل</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="internet_error_message">خطأ في الاتصال بالانترنت</string>
+    <string name="church_name">كاهن كنيسة\nالعذراء و مارمينا والبابا كيرلس بالجبل الأصفر</string>
+    <string name="abona_name">القمص كيرلس روماني</string>
+    <string name="kotob_label">كتب</string>
+    <string name="try_again_text">حاول مرة اخري</string>
+
+</resources>
