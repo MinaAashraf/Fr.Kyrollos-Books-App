@@ -34,7 +34,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_3sdp"
             android:ellipsize="end"
-            android:fontFamily="@font/mirza"
             android:gravity="right"
             android:maxLines="2"
             android:text="@{book.name}"

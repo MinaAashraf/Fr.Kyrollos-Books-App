@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">كتب القمص كيرلس روماني</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="search_hint">ابحث عن الكتاب الذي تريده..</string>
+    <string name="search_hint">بحث باسم الكتاب</string>
     <string name="folder_name">كتب ابونا كيرلس</string>
     <string name="pdf_name_key">pdf_name</string>
     <string name="download_label">تحميل</string>
